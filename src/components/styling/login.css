@@ -1,0 +1,10 @@
+:root{
+    --body-color: #010101;
+    --orange-color: #FE6902;
+    --font-color: #E5E5E5;
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--font-color);
+}

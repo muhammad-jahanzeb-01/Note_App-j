@@ -1,0 +1,104 @@
+:root{
+    --body-color: #010101;
+    --orange-color: #FE6902;
+    --orangeS-color: #f49958;
+    --font-color: #E5E5E5;
+    --boxes-color: #1b1b1b;
+    --white-color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--body-color);
+    color: var(--font-color);
+}
+
+nav .navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    /* max-width: 380px !important; */
+    margin: 0 auto;
+}
+.navBar #logo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* color: var(--orange-color); */
+    /* font-family: "Chewy", serif; */
+}
+
+.navBar #hamBurger{
+    display: flex;
+    flex-direction: column;
+}
+#hamBurger .lines{
+    height: 3px;
+    width: 28px;
+    border-radius: 30px;
+    background-color: var(--font-color);
+    margin-bottom: 0.3rem;
+}
+
+/* Catogories */
+
+.categories{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 90%;
+    overflow-x: scroll;
+    margin: 0 auto;
+    white-space: nowrap;
+    font-size: 14px;
+   
+}
+.categories::-webkit-scrollbar{
+    display: none;
+}
+
+.categories  .category{
+    height: 45px;
+    width: auto;
+    border-radius: 30px;
+    padding: 0px 12px;
+    background-color: var(--boxes-color) ;
+    display: flex;
+    gap: 0.7rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.category .catName{
+ margin: 0;   
+}
+.category .catNum{
+    margin: 0;   
+    background: var(--font-color);
+    color: var(--body-color);
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category:active{
+    background-color: var(--white-color);
+    color: var(--body-color);
+}
+.category:focus{
+    background-color: var(--white-color);
+    color: var(--body-color);
+}
+/* .category:nth-child(2){
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: var(--font-color);
+} */
